@@ -1,0 +1,30 @@
+<div #stage class="flex-container">
+  <div *ngIf="!isVideo(currentPlay)">
+    <mp-image-playback></mp-image-playback>
+  </div>
+
+  <div>
+    <div *ngIf="hasNoMedia" class="flex-item message">
+      <mp-no-media #mpnm message="No content found at this time">
+      </mp-no-media>
+    </div>
+
+    <div *ngIf="isWaiting" class="flex-item">
+      <mp-next-media-timer #mpnmt *ngIf="millisecondsToGo" class="message next-media-count" [millisecondsToGo]="millisecondsToGo" (update)="handleTimerUpdates($event)">
+      </mp-next-media-timer>
+    </div>
+
+    <div *ngIf="isPlaying && currentPlay">
+      <div *ngIf="isAudio(currentPlay)">
+        <mp-audio-playback #mpap [file]="currentPlay.name" [relativePath]="currentPlay.relativePath" [volume]="currentPlay.volume" [debug]="debugging" (finish)="handleFinish($event)">
+        </mp-audio-playback>
+      </div>
+
+      <div *ngIf="isVideo(currentPlay)">
+        <mp-video-playback #mpvp [file]="currentPlay.name" [relativePath]="currentPlay.relativePath" [volume]="currentPlay.volume" (finish)="handleFinish($event)">
+        </mp-video-playback>
+      </div>
+
+    </div>
+  </div>
+</div>

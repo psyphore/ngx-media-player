@@ -1,0 +1,37 @@
+{
+  "version": "0.1.0",
+  "command": "yarn",
+  "isShellCommand": true,
+  "showOutput": "always",
+  "suppressTaskName": true,
+  "tasks": [
+    {
+      "taskName": "start",
+      "args": [ "run", "start"],
+      "problemMatcher":{
+        "owner": "start",
+        "fileLocation":["relative", "${workspaceRoot}"],
+        "severity": "warning"
+      }
+    },
+    {
+      "taskName": "tslint",
+      "args": [ "run", "lint" ],
+      "problemMatcher": {
+        "owner": "tslint",
+        "fileLocation": [
+          "relative",
+          "${workspaceRoot}"
+        ],
+        "severity": "warning",
+        "pattern": {
+          "regexp": "^(\\S.*)\\[(\\d+), (\\d+)\\]:\\s+(.*)$",
+          "file": 1,
+          "line": 2,
+          "column": 3,
+          "message": 4
+        }
+      }
+    }
+  ]
+}
