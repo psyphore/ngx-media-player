@@ -56,20 +56,6 @@ export class VideoPlaybackComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    // if (changes && changes['file'] &&
-    //   changes['file'].currentValue &&
-    //   changes['file'].previousValue !== changes['file'].currentValue) {
-    //   setTimeout(() => {
-    //     let supported = environment.supportedMediaExtensions.some(s => (<string>changes['file'].currentValue).indexOf(s) !== -1);
-    //     if (!supported) {
-    //       this.finish.emit(true);
-    //       return;
-    //     }
-
-    //     this.loadNextClip(changes['file'].currentValue);
-    //   }, 0);
-    // }
-
     if (changes && changes['relativePath'] &&
       changes['relativePath'].previousValue !== changes['relativePath'].currentValue &&
       changes['relativePath'].currentValue !== '') {

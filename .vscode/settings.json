@@ -12,7 +12,6 @@
   "editor.tabSize": 2,
   "git.enabled": true,
   "files.autoSave": "off",
-  "typescript.check.tscVersion": false,
   "workbench.colorTheme": "Default Dark+",
   "workbench.iconTheme": "material-icon-theme",
   "files.exclude": {
@@ -33,5 +32,10 @@
   },
   "typescript.referencesCodeLens.enabled": true,
   "typescript.implementationsCodeLens.enabled": true,
-  "typescript.useCodeSnippetsOnMethodSuggest": false
+  "typescript.autoClosingTags": true,
+  "typescript.check.npmIsInstalled": true,
+  "importCost.typescriptExtensions": [
+    "\\.tsx?$", "\\.ts?$"
+  ],
+  "typescript.suggest.enabled": true
 }

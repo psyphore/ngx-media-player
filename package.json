@@ -1,9 +1,10 @@
 {
-  "name": "ng4-ts-media-player",
-  "version": "1.0.4",
+  "name": "ngx-media-player",
+  "version": "1.0.0",
   "description": "play content from playlist",
   "repository": {
-    "url": "git@bitbucket.org:sipho_hlophe/ng4-ts-media-player.git"
+    "type": "git",
+    "url": "https://github.com/psyphore/ngx-media-player.git"
   },
   "author": "sipho hlophe <psyphore@gmail.com>",
   "license": "private",
@@ -18,25 +19,25 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^4.2.4",
-    "@angular/common": "^4.2.4",
-    "@angular/compiler": "^4.2.4",
-    "@angular/core": "^4.2.4",
-    "@angular/forms": "^4.2.4",
-    "@angular/http": "^4.2.4",
-    "@angular/platform-browser": "^4.2.4",
-    "@angular/platform-browser-dynamic": "^4.2.4",
-    "@angular/router": "^4.2.4",
-    "core-js": "^2.4.1",
+    "@angular/animations": "4.2.4",
+    "@angular/common": "4.2.4",
+    "@angular/compiler": "4.2.4",
+    "@angular/core": "4.2.4",
+    "@angular/forms": "4.2.4",
+    "@angular/http": "4.2.4",
+    "@angular/platform-browser": "4.2.4",
+    "@angular/platform-browser-dynamic": "4.2.4",
+    "@angular/router": "4.2.4",
+    "core-js": "2.4.1",
     "moment": "2.20.1",
     "rxjs": "5.5.6",
     "socket.io": "2.0.4",
-    "zone.js": "^0.8.14"
+    "zone.js": "0.8.14"
   },
   "devDependencies": {
-    "@angular/cli": "1.3.0",
-    "@angular/compiler-cli": "^4.2.4",
-    "@angular/language-service": "^4.2.4",
+    "@angular/cli": "8.3.20",
+    "@angular/compiler-cli": "4.2.4",
+    "@angular/language-service": "4.2.4",
     "typescript": "2.6.2"
   }
 }
